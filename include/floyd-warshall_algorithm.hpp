@@ -7,7 +7,7 @@ using namespace std;
 namespace itis {
 
   //нахождение кратчайших длин по алгоритму Флойда–Уоршелла
-  int floyd(vector<vector<int>> w);
+  void floyd(vector<vector<int>> &w);
 
   //получение самого пути (кратчайшего) между вершинами
   int getShortestPath(int u, int v);
