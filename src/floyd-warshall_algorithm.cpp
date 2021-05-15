@@ -6,7 +6,7 @@ namespace itis {
 
   vector<vector<int>> floyd(vector<vector<int>> &w) {
     d = w;
-    //
+    //заполнение массива next
     next.resize(w.size());
     for (int u = 0; u < w.size(); ++u) {
       for (int v = 0; v < w.size(); ++v) {
@@ -28,6 +28,7 @@ namespace itis {
   }
 
   string getShortestPath(int u, int v) {
+    //-1 значит, что до двух вершин нет пути
     if (d[u][v] == -1) {
       return "No path found";
     }
