@@ -35,7 +35,7 @@ target_compile_definitions(project_paths INTERFACE
 
 add_library(${PROJECT_NAME} STATIC
         src/floyd-warshall_algorithm.cpp
-        include/floyd-warshall_algorithm.hpp)
+        include/floyd-warshall_algorithm.hpp examples/examples.cpp)
 
 # включить предупреждения компилятора для библиотеки (линковка)
 target_link_libraries(${PROJECT_NAME} PRIVATE project_warnings)
