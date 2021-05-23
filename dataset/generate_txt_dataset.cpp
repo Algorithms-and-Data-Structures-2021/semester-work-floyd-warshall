@@ -4,14 +4,15 @@
 #include <ctime>
 #include <chrono>
 #include <thread>
+#include <cmath>
 
 using namespace std;
 static constexpr auto kDatasetPath = string_view{PROJECT_DATASET_DIR};
 
-void create_data_for_split_delete_find(string path, int x) {
+void create_matrix(string path, int x) {
   ofstream fout;
   fout.open(path);
-
+  x = sqrt(x);
   if (!fout.is_open()) {
     cout << "Error" << endl;
   } else {
@@ -39,16 +40,16 @@ void create_data_for_split_delete_find(string path, int x) {
 
 int main() {
   const auto path = string(kDatasetPath);  // конвертация string_view в string
-  int a[14] = {100, 500, 1000, 2500, 5000, 10000, 25000, 50000, 75000, 100000, 250000, 500000, 750000, 1000000};
-  cout << "Процесс генерации тестовых данных начат! Ожидайте..." << endl;
+  int a[14] = {100, 625, 1024, 2500, 5041, 10000, 24964, 50176, 75076, 99856, 250000, 499849, 749956, 1000000};
+  cout << "Started! Wait..." << endl;
   for (int j = 0; j < 14; ++j) {
     for (int k = 1; k < 11; ++k) {
       string s1 = to_string(a[j]);
       string s2 = to_string(k);
-      create_data_for_split_delete_find(path + "/" + s1 + "(" + s2 + ").txt", a[j]);
+      create_matrix(path + "/" + s1 + "(" + s2 + ").txt", a[j]);
     }
   }
-  cout << "Данные успешно сгенерированы" << endl;
+  cout << "Completed!" << endl;
 
   return 0;
 }
