@@ -1,6 +1,6 @@
 # Алгоритм Флойда-Уоршелла (графы)
 
-[![CMake](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-floyd-warshall/actions/workflows/cmake.yml/badge.svg?event=release)](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-floyd-warshall/actions/workflows/cmake.yml)
+[![CMake](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-floyd-warshall/actions/workflows/cmake.yml/badge.svg)](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-floyd-warshall/actions/workflows/cmake.yml)
 
 [Google Drive Проекта ](https://drive.google.com/drive/u/0/folders/16McMD_8MQKvyYml6jxN_vSQJWh-cqoWm)
 
