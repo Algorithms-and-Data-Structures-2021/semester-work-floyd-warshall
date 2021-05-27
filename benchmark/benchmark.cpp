@@ -3,6 +3,7 @@
 #include <floyd-warshall_algorithm.hpp>
 #include <iostream>
 #include <string>
+#include <math.h>
 
 using namespace std;
 using namespace itis;
