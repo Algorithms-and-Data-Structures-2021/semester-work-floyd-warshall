@@ -22,7 +22,7 @@ void create_matrix(string path, int x) {
     srand(time(nullptr));
     for (int i = 0; i < x; ++i) {
       for (int j = 0; j < x; j++) {
-        int c = rand();
+        int c = rand() + 1;
         if(j!=x-1){
           fout << c << " ";
         } else{
